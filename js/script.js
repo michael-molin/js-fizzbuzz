@@ -10,11 +10,12 @@ for (var i = 1; i <= 100; i++) {
     } else {
         array.push(i);
     }
+
 }
 
 console.log('stampa array');
 for (var x = 0 ; x< array.length ; x ++) {
-    console.log(array[x]);
+    document.getElementById('lista').innerHTML += array[x] + " ";
 }
 
-document.getElementById('lista').innerHTML = array;
+// document.getElementById('lista').innerHTML = array;
